@@ -1,2 +1,13 @@
 <h1>Welcome to my Quiz Material</h1>
 <h2>By Megan Faley</h2>
+
+<%= simple_form_for @question do |f| %>
+	<%= f.input :section %>
+	<%= f.input :description %>
+	<%= f.input :answer %>
+	<br />
+	<%= f.button :submit %>
+<% end %>
+
+
+
