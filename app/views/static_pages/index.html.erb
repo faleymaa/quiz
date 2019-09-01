@@ -9,5 +9,11 @@
 	<%= f.button :submit %>
 <% end %>
 
+<% @questions.each do |question| %>
+  <div>
+    <h3><%= question.section %></h3><br />
+    <i><%= question.description %></i><br />
+    <p><%= question.answer %></p><br />
+  </div>
 
-
+<% end %>
